@@ -1,12 +1,18 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Pages
+import HomePage from './pages/HomePage';
+
 import './App.css'
 
 function App() {
-
   return (
-    <>
-      define list generator
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
