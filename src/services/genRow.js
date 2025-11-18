@@ -9,8 +9,11 @@ function genRow(rowName, index, SVNameArray, SVValueArray, rowLabel, isRowValues
         rowOutput += ` cs:${svName}="${SVValueArray[svIndex][index]}"`;
     });
 
-    // Add group values
-    rowOutput += ` groups="${grpVals[index]}"`;
+
+    // Add group values if any
+    if (grpVals.length > 0){
+        rowOutput += ` groups="${grpVals[index]}"`;
+    }
     
 
     // Close the row tag and add the row name
