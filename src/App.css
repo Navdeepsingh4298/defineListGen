@@ -1,4 +1,3 @@
-
 #root {
   max-width: 100vw;
   /* margin: 0 auto; */
@@ -6,7 +5,7 @@
   /* text-align: center; */
 }
 
-.loader-container{
+.loader-container {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -16,10 +15,10 @@
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-background: rgba(255, 255, 255, 0.01);
-backdrop-filter: blur(2px);
-transform: translate(-50%, -50%);
-z-index: 9999;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(2px);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
 }
 
 .logo {
@@ -28,9 +27,11 @@ z-index: 9999;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -39,6 +40,7 @@ z-index: 9999;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -58,43 +60,50 @@ z-index: 9999;
   color: #888;
 }
 
-input{
+input {
   padding: 5px;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   width: 20px;
   height: 20px;
 }
 
-#mainContainer{
-width: 100%;
+#mainContainer {
+  width: 100%;
 }
 
 
 
-.container2{
+.container2 {
   display: flex;
   flex-direction: column;
-  gap:10px;
-  
+  gap: 10px;
+
 }
 
-.container1{
+.container1 {
   display: flex;
   flex-wrap: wrap;
-  gap:15px;
+  gap: 15px;
 }
 
 
-.contentContainer{
-  margin-top: 2rem;;
+.contentContainer {
+  margin-top: 2rem;
+  ;
   display: flex;
 }
 
-.center{
+.center {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.output-field {
+  resize: none;
+  overflow-y: scroll;
+  /* scrollbar-width: none; */
 }

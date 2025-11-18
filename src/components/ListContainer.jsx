@@ -15,6 +15,7 @@ const ListContainer = (props) => {
             placeholder='Enter List Rows'
             cols="40"
             rows="30"
+            className='output-field'
             value={props.listRows}
             onChange={props.handleListRowsChange}
           />

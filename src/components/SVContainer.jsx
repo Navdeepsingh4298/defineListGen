@@ -16,6 +16,7 @@ const SVContainer = (props) => {
             placeholder='Enter Stylevar Values'
             cols="30"
             rows="30"
+            className='output-field'
             value={props.SVValue}
             onChange={(e) => props.handleStyleVarValueChange(e, props.index)}
           />

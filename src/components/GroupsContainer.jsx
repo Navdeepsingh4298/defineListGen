@@ -16,6 +16,7 @@ const GroupsContainer = (props) => {
             placeholder='Enter Groups Values'
             cols="30"
             rows="30"
+            className='output-field'
             value={props.groups.groupValues.join("\n")}
             onChange={props.handleGrpValueChange}
           />

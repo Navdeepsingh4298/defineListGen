@@ -107,6 +107,7 @@ const OutputContainer = (props) => {
           <textarea name="" id=""
             placeholder='Output will be generated here....'
             cols="40" rows="30"
+            className='output-field'
             value={props.errData.isError ? "Please fix the Error and Try Again." : props.outputValue}
             readOnly
           />
